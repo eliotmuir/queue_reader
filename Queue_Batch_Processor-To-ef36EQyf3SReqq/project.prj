@@ -1,0 +1,14 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "queue.api",
+        "store2"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1491525468",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

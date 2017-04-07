@@ -1,0 +1,22 @@
+<channel
+   name="Queue Batch Processor"
+   guid="257B3DACEB90E8133A84C2184F9B09B8"
+   description="Example code that reads the queue for this channel to batch process."
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Queue_Batch_Processor-To-ef36EQyf3SReqq"
+      commit_id="76f0d9289d2cb170df194873792f24d5b14ba4cc"
+      commit_comment="Put in code to process many messages.">
+      <dequeue_list>
+         <dequeue
+            source_name="Queue Generator"
+            dequeue_guid="F44856B1DA5656B529A9F0AD8BE0B8B6"/>
+         <dequeue
+            source_name="Kainos Hello World"
+            dequeue_guid="6C4419BC2709E7F710D8EACDDDD35F2D"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_channel/>
+</channel>
